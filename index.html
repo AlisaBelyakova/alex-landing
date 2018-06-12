@@ -9,11 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
 
 <body> 
   <div id='nav-fixed'>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id='navbar'>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" id='navbar'>
     <a class="navbar-brand orange-text" href="#">Alex Stolyarik</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -21,16 +24,16 @@
         
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-              <a class="nav-link" href="#navbar" id='home-btn'> Home <span class="sr-only">(current)</span></a>
-            </li>
-        <li class="nav-item">
+          <!-- <li class="nav-item active" id='home-link'>
+              <a class="nav-link " href="#navbar" id='home-btn'> Home <span class="sr-only">(current)</span></a>
+            </li> -->
+        <li class="nav-item" id='about-link'>
           <a class="nav-link" href="#navbar" id='about-btn'> About <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" id='contacts-link'>
           <a class="nav-link" href="#" id='contacts-btn'> Contacts </a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" id='projects-link'>
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Projects
           </a>
@@ -44,20 +47,24 @@
           </div>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <img class='media-icon' src='./images/linkedin.png'/>
+      <img class='media-icon' src='./images/mail.png'/>
+      <img class='media-icon' src='./images/facebook.png'/>
+      <!-- <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-      </form>
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
     </div>
   </nav>
 </div>
+
 <!-- ======================================================================== ABOUT -->
-  <div class='section' id='main'>
+<div class='section' id='main'>
     <span class='photo-box'>
       <img src ='./images/alex.jpg' class='photo'>
     </span>
     <span class='right-section'>
-      <p class='about-text'>
+      <span><p class='about-text'>
           I've spent nearly a decade implementing project-based 
           experiential education internationally. In 2011, as a member of the Democracy and Art 
           nonprofit, I originated a joint venture between the British “London Metropolitan University” 
@@ -67,22 +74,17 @@
           land development projects. In three years of program refinement, I and my team organically 
           grew neighborhood development collectives, jump-started public workshops, and graduated 80 students 
           with dual degrees in Public Administration and Planning.
-      </p>
-        <!-- <button type="button" class="btn-block btn-outline-warning btn-lg"  
-        onclick="window.location.href='mailto:stolyarikalex@gmail.com?Subject=Hello'">
-            See Current Projects</button> -->
+      </p><br/></span>
+      <span id='slides'>
+        <span class="arrow" > <a>◀︎</a> </span>
+        <img src='./images/slides/1.jpg' class='slide' id='left-sm-blur' />
+        <img src='./images/slides/2.jpg' class='slide' id='left-lr-blur' />
+        <img src='./images/slides/3.jpg' class='slide' id='focus-img' />
+        <img src='./images/slides/4.jpg' class='slide' id='right-lr-blur' />
+        <img src='./images/slides/5.jpg' class='slide' id='right-sm-blur' />
+        <span class="arrow" > <a>▶︎</a></span>
+      </span>
     </span>
-  </div>
-
-  <div class='section' id='contacts'>
-      <span class='photo-box'>
-          <img src ='./images/alex.jpg' class='photo'>
-        </span>
-        <span class='right-section'>
-          <p class='about-text'>I'm open to discuss parthenships and cooperation. 
-            Please feel free to contact me with your qouestions and ideas via links below</p>
-        </span>
-
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

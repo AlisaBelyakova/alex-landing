@@ -7,21 +7,27 @@ window.addEventListener('load', () => {
     var main = document.getElementById('main');
     var contacts = document.getElementById('contacts');
 
-    sections.forEach(item => item.style.display = 'none');
+    // sections.forEach(item => item.style.display = 'none');
 
     homeBtn.addEventListener('click', () => {
         sections.forEach(item => item.style.display = 'none');
-        main.style.display = 'flex';
+        home.style.display = 'flex';
+        Array.from(document.getElementsByClassName('nav-item')).forEach(item => item.classList.remove('active'))
+        document.getElementById('home-link').classList.add('active');
     });
 
     aboutBtn.addEventListener('click', () => {
         sections.forEach(item => item.style.display = 'none');
         main.style.display = 'flex';
+        Array.from(document.getElementsByClassName('nav-item')).forEach(item => item.classList.remove('active'))
+        document.getElementById('about-link').classList.add('active');
     });
 
     contactsBtn.addEventListener('click', () => {
         sections.forEach(item => item.style.display = 'none');
         contacts.style.display = 'flex';
+        Array.from(document.getElementsByClassName('nav-item')).forEach(item => item.classList.remove('active'))
+        document.getElementById('contacts-link').classList.add('active');
     });
 
 })
