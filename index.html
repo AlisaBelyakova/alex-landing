@@ -4,7 +4,7 @@
     <title>Alex Stolyarik</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' href='./style.css'/>
-    <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
@@ -15,77 +15,41 @@
 </head>
 
 <body> 
-  <div id='nav-fixed'>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark" id='navbar'>
-    <a class="navbar-brand orange-text" href="#">Alex Stolyarik</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-          <!-- <li class="nav-item active" id='home-link'>
-              <a class="nav-link " href="#navbar" id='home-btn'> Home <span class="sr-only">(current)</span></a>
-            </li> -->
-        <li class="nav-item" id='about-link'>
-          <a class="nav-link" href="#navbar" id='about-btn'> About <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item" id='contacts-link'>
-          <a class="nav-link" href="#" id='contacts-btn'> Contacts </a>
-        </li>
-        <li class="nav-item dropdown" id='projects-link'>
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Educational Ventures</a>
-            <a class="dropdown-item" href="#">Creative Communities</a>
-            <a class="dropdown-item" href="#">Corporate Real Estate</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">See Current Projects</a>
-            <a class="dropdown-item" href="#">See All Projects</a>
-          </div>
-        </li>
-      </ul>
-      <img class='media-icon' src='./images/linkedin.png'/>
-      <img class='media-icon' src='./images/mail.png'/>
-      <img class='media-icon' src='./images/facebook.png'/>
-      <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
-    </div>
-  </nav>
-</div>
 
-<!-- ======================================================================== ABOUT -->
-<div class='section' id='main'>
-    <span class='photo-box'>
-      <img src ='./images/alex.jpg' class='photo'>
-    </span>
-    <span class='right-section'>
-      <span><p class='about-text'>
-          I've spent nearly a decade implementing project-based 
-          experiential education internationally. In 2011, as a member of the Democracy and Art 
-          nonprofit, I originated a joint venture between the British “London Metropolitan University” 
-          MARCH and the Russian Academy of National Economy and Public Administration. 
-          <br><br>
-          A year later I launched a test program designed to engage graduate students with “real-world” 
-          land development projects. In three years of program refinement, I and my team organically 
-          grew neighborhood development collectives, jump-started public workshops, and graduated 80 students 
-          with dual degrees in Public Administration and Planning.
-      </p><br/></span>
-      <span id='slides'>
-        <span class="arrow" > <a>◀︎</a> </span>
-        <img src='./images/slides/1.jpg' class='slide' id='left-sm-blur' />
-        <img src='./images/slides/2.jpg' class='slide' id='left-lr-blur' />
-        <img src='./images/slides/3.jpg' class='slide' id='focus-img' />
-        <img src='./images/slides/4.jpg' class='slide' id='right-lr-blur' />
-        <img src='./images/slides/5.jpg' class='slide' id='right-sm-blur' />
-        <span class="arrow" > <a>▶︎</a></span>
-      </span>
-    </span>
+  <header>
+    <h1 id='header-alex'>Alex Stolyarik</h1>
+    <img class="media-img" src="./images/facebook.png"/>
+    <img class="media-img" src="./images/linkedin.png"/>
+    <img class="media-img" src="./images/mail.png"/>
+  </header>
+
+  <div id="main-text-top">
+    <p class='text-main'>
+      I have spent nearly a decade implementing project-based experiential education internationally. 
+      In 2011, as a member of the Democracy and Art nonprofit, he originated a joint venture between the British 
+      “London Metropolitan University” MARCH and the Russian Academy of National Economy and Public Administration. 
+      <!-- A year later I launched a test program designed to engage graduate students with “real-world” land development projects. 
+      In three years of program refinement, he and his team organically grew neighborhood development collectives, 
+      jump-started public workshops, and graduated 80 students with dual degrees in Public Administration and Planning. -->
+    </p>
   </div>
+  <div id="carusel">
+    <img src='./images/slides/1.jpg' class='slide-img swing' id='slide-1'/> 
+    <img src='./images/slides/2.jpg' class='slide-img swing' id='slide-2'/> 
+    <img src='./images/slides/3.jpg' class='slide-img swing' id='slide-3'/> 
+    <img src='./images/slides/4.jpg' class='slide-img swing' id='slide-4'/> 
+    <img src='./images/slides/5.jpg' class='slide-img swing' id='slide-5'/> 
+  </div>
+  <!-- <div id="main-text-bottom">
+      <p class='text-main'>
+          I hasvespent nearly a decade implementing project-based experiential education internationally. 
+          In 2011, as a member of the Democracy and Art nonprofit, he originated a joint venture between the British 
+          “London Metropolitan University” MARCH and the Russian Academy of National Economy and Public Administration. 
+          A year later he launched a test program designed to engage graduate students with “real-world” land development projects. 
+          In three years of program refinement, he and his team organically grew neighborhood development collectives, 
+          jump-started public workshops, and graduated 80 students with dual degrees in Public Administration and Planning.
+      </p>
+  </div> -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

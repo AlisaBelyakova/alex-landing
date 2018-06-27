@@ -1,33 +1,24 @@
 window.addEventListener('load', () => {
-    var homeBtn = document.getElementById('home-btn');
-    var aboutBtn = document.getElementById('about-btn');
-    var contactsBtn = document.getElementById('contacts-btn');
 
-    var sections = Array.from(document.getElementsByClassName('section'));
-    var main = document.getElementById('main');
-    var contacts = document.getElementById('contacts');
 
-    // sections.forEach(item => item.style.display = 'none');
+    let picturesCarusel = window.setInterval(() => {
+        console.log('change pics')
+        let isNumber = /^[0-9]$/
+        let caruselImgs = Array.from(document.getElementsByClassName('slide-img'));
 
-    homeBtn.addEventListener('click', () => {
-        sections.forEach(item => item.style.display = 'none');
-        home.style.display = 'flex';
-        Array.from(document.getElementsByClassName('nav-item')).forEach(item => item.classList.remove('active'))
-        document.getElementById('home-link').classList.add('active');
-    });
+        caruselImgs.forEach(item => {
+            let getTheScr = item.getAttribute('src');
+            let numberOfItem = Number(getTheScr.split('').filter(char => isNumber.test(char)).join(''));
 
-    aboutBtn.addEventListener('click', () => {
-        sections.forEach(item => item.style.display = 'none');
-        main.style.display = 'flex';
-        Array.from(document.getElementsByClassName('nav-item')).forEach(item => item.classList.remove('active'))
-        document.getElementById('about-link').classList.add('active');
-    });
+            if (numberOfItem === 12) numberOfItem = 1;
+            else numberOfItem += 1;
 
-    contactsBtn.addEventListener('click', () => {
-        sections.forEach(item => item.style.display = 'none');
-        contacts.style.display = 'flex';
-        Array.from(document.getElementsByClassName('nav-item')).forEach(item => item.classList.remove('active'))
-        document.getElementById('contacts-link').classList.add('active');
-    });
+            item.setAttribute('src', `./images/slides/${numberOfItem}.jpg`)
+        });
+
+    }, 2000);
+
+
+
 
 })
