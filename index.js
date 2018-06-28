@@ -3,6 +3,7 @@ window.addEventListener('load', () => {
 
     let picturesCarusel = window.setInterval(() => {
         console.log('change pics')
+
         let isNumber = /^[0-9]$/
         let caruselImgs = Array.from(document.getElementsByClassName('slide-img'));
 
