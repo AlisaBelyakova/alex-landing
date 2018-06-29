@@ -11,14 +11,15 @@
 } */
 
 #header-alex {
+    font-size: 30px;
     margin-right: 15px;
-    padding: 0 0 0 5%;
+    padding-left: 3.5%;
     display: inline;
     position: relative;
     top: 12px;
 }
 .media-img {
-    height: 40px;
+    height: 35px;
     margin: 0 3px;
     display: inline;
 }
@@ -31,24 +32,25 @@
 
 header {
     /* display: flex; */
-    padding-top: 3vh;
+    padding: 2vh 0;
 }
 
 #main-text-top, #main-text-bottom {
     display: grid;
     grid-template-columns: 70% 15% 15%;
-    padding: 3vh 0 ;
+    padding: 2vh 0 ;
     /* transform: perspective(900px) rotateY(-30deg); */
 }
 
 .text-main {
     padding: 0 5%;
     font-size: 20px;
-     
 }
 /* ============================================================== BUTTONS */
 
 .portfolio-btn {
+    position: relative;
+    top: -5vh;
     flex: none;
     height: 150px;
     width: 150px;
@@ -56,7 +58,6 @@ header {
     font-size: 22px;
     border-radius: 100%;
     text-align: center;
-
 }
 
 #port-edu {
@@ -65,7 +66,7 @@ header {
 }
 
 #port-comm{
-    color: black;
+    color: rgb(241, 117, 0);
     background-color: white;
     border: 1px solid black;
 }
@@ -82,6 +83,7 @@ header {
     top: 40px;
     left: -25px;
 }
+
 #port-arch{
     background-color: rgb(241, 117, 0);
 }
@@ -107,27 +109,51 @@ header {
 /* ============================================================ CSRUSEL  */
 
 #carusel {
-    left: 10vw;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: nowrap;
-    /* position: relative;
-    top: 10vh; */
+    position: relative;
+    left: 7vw;
     width: 100%;
     justify-content: space-between ;
     transform: perspective(1200px) rotateY(30deg);
+    padding-top: 1vh;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     #carusel {
-        left: 5vw;
+        left: 4vw;
     } 
+    #slide-5{ display: none;}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-hight: 550px) {
+    .text-main { font-size: 18px; }
+}
+
+@media screen and (max-width: 900px) {
     #carusel {
-        left: 5vw;
+        left: 4vw;
     } 
-    #slide-5 { display: none;}
+    #slide-4 { display: none;}
+    .text-main { font-size: 19px; }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    #carusel {
+        left: 2vw;
+    } 
+    #slide-3 { display: none; }
+    .text-main { font-size: 18px; }
+}
+
+@media screen and (max-width: 600px) {
+    #carusel {
+        left: 0;
+    } 
+    #slide-3 { display: none;}
 }
 
 
@@ -138,6 +164,8 @@ header {
 }
 
 #slide-1 {
+    flex-shrink: 0.75;
+    flex-grow: 1.5;
     /* width:19%; */
     height: 30vh;
     /* transform: perspective(600px) rotateY(30deg); */
@@ -145,6 +173,8 @@ header {
 }
 
 #slide-2 {
+    flex-shrink: 0.75;
+    flex-grow: 1.5;
     /* width:19%; */
     height: 30vh;
     border: 8px dotted black;
@@ -153,6 +183,8 @@ header {
 }
 
 #slide-3 {
+    flex-shrink: 0.75;
+    flex-grow: 1.5;
     /* width:19%; */
     height: 30vh;
     /* transform: perspective(600px) rotateY(30deg); */
@@ -160,6 +192,8 @@ header {
 }
 
 #slide-4 {
+    flex-shrink: 0.75;
+    flex-grow: 1.5;
     /* width:19%; */
     height: 30vh;
     /* transform: perspective(600px) rotateY(30deg); */
@@ -167,6 +201,8 @@ header {
 }
 
 #slide-5 {
+    flex-shrink: 0.75;
+    flex-grow: 1.5;
     /* width:19%; */
     height: 30vh;
     /* transform: perspective(600px) rotateY(30deg); */
@@ -248,3 +284,5 @@ header {
         -webkit-animation-iteration-count: 1;
         animation-iteration-count: 1;
 }
+
+
